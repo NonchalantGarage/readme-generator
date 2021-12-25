@@ -9,6 +9,7 @@ console.log(test);
 const promptUser = () => {
     return inquirer
     .prompt([
+        // what is the title of your project
         {
             type: 'input',
             name: 'title',
@@ -19,11 +20,24 @@ const promptUser = () => {
                 } else {
                     return console.log('Please enter a title');
                 }
-        }
-    }, 
-        // what is the title of your project
-
+        },
+    },
         // Description 
+    {
+            type: 'input',
+            name: 'Description',
+            message: 'Please add a description for your project',
+            validate: descriptionInput => {
+                if (descriptionInput){
+                    return true
+                } else {
+                    return console.log('Please enter a description')
+                }
+            },
+    },
+    
+
+        
         // ToC
         // Installation
         // Usage
