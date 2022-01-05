@@ -1,8 +1,8 @@
   // TODO: Include packages needed for this application
 const fs = require('fs');
 const inquirer = require('inquirer');
-// const generateMarkdown = require('./utils/generateMarkdown');
-
+const generateMarkdown = require('./utils/generateMarkdown');
+const {writeFile} = require('../Develop/writefile')
 // fs.writeFile('README.MD', generateReadMe(), err =>{
 //     if(err) throw err;
 
@@ -97,12 +97,12 @@ const promptUser = () => {
 // init();
 promptUser()
     .then(readmeData => {
-        console.log(readmeData)
+        return generateMarkdown(readmeData);
+    })
+    .then(reademePage =>{
+        return writeFile(reademePage)
     });
 
 
-    //     // return generateMarkdown(readmeData);
-    // })
-    // .then(reademePage =>{
-    //     return fs.writeFile(reademePage)
-    // });
+ 
+    

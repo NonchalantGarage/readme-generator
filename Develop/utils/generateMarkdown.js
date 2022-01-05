@@ -11,7 +11,9 @@ function renderLicenseLink(license) {}
 function renderLicenseSection(license) {}
 
 // TODO: Create a function to generate markdown for README
-function generateMarkdown(input) {
+
+
+module.exports = input => {
   return `# ${input.title}
 
 
@@ -30,7 +32,6 @@ ${input.usage}
 
 
 ## License
-${input.license}
 
 
 
@@ -47,8 +48,22 @@ ${input.tests}
 For questions, please reach out via GitHub or the email below.
 
 ${input.username}
-${input.email}
-`;
-}
 
-module.exports = generateMarkdown();
+${input.email}
+`
+}
+;
+// const mockData = {
+//   title: 'Read Me Automation',
+//   description: 'Project to generate read me',
+//   installation: 'Installation package',
+//   usage: 'Use it as promised',
+//   license: [ 'MIT', 'BSD', 'GPL' ],
+//   contributions: '',
+//   tests: 'Test using TDD',
+//   username: 'NonchalantGarage',
+//   email: 'my Email'
+// }
+
+
+// console.log(generateMarkdown(mockData));
