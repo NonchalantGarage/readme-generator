@@ -54,14 +54,15 @@ const promptUser = () => {
     },
     // Licenses
     {
-        type: 'input',
+        type: 'checkbox',
         name: 'license',
-        message: 'List your licenses',
+        choices: ['MIT', 'BSD', 'GPL'],
+        message: 'Select your licenses',
     },
     // Contributing
     {
         type: 'input',
-        name: 'contributors',
+        name: 'contributions',
         message: 'Enter comments on how to contribute',
     },
     // Tests
@@ -70,6 +71,7 @@ const promptUser = () => {
         name: 'tests',
         message: 'Explain the testing procedures',
     },
+    // Questions 
     {
         type:'input',
         name: 'questions-username',
@@ -80,8 +82,6 @@ const promptUser = () => {
         name: 'questions-email',
         message: 'Enter your email address',
     }
-         
-        // Questions 
     ])
     .then(input => console.log(input))
 };   
