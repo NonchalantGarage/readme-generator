@@ -1,7 +1,14 @@
   // TODO: Include packages needed for this application
 const fs = require('fs');
 const inquirer = require('inquirer');
-const generateMarkdown = require('./utils/generateMarkdown');
+// const generateMarkdown = require('./utils/generateMarkdown');
+
+// fs.writeFile('README.MD', generateReadMe(), err =>{
+//     if(err) throw err;
+
+//     console.log('README complete! Check out dist directory to see the output!');
+
+// })
 
 const promptUser = () => {
     return inquirer
@@ -32,13 +39,6 @@ const promptUser = () => {
             }
         },
     },   
-    // ToC
-
-    {
-        type: 'confirm',
-        name: 'toc',
-        message: 'Would you like to add a table of contents?',
-    },
     // Installation
     {
         type: 'input',
@@ -74,26 +74,35 @@ const promptUser = () => {
     // Questions 
     {
         type:'input',
-        name: 'questions-username',
+        name: 'username',
         message: 'Enter your GitHub username',
     },
     {
         type:'input',
-        name: 'questions-email',
+        name: 'email',
         message: 'Enter your email address',
     }
+        
     ])
-    .then(input => console.log(input))
+   
 };   
-// TODO: Create an array of questions for user input
-const questions = [];
 
 // TODO: Create a function to write README file
-function writeToFile(fileName, data) {}
+// function writeToFile(fileName, data) {}
 
-// TODO: Create a function to initialize app
-function init() {}
+// // TODO: Create a function to initialize app
+// function init() {}
 
 // Function call to initialize app
-init();
-promptUser();
+// init();
+promptUser()
+    .then(readmeData => {
+        console.log(readmeData)
+    });
+
+
+    //     // return generateMarkdown(readmeData);
+    // })
+    // .then(reademePage =>{
+    //     return fs.writeFile(reademePage)
+    // });

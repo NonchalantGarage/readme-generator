@@ -1,5 +1,4 @@
-
-
+const generateMarkdown = (input)=>{
 return `# ${input.title}
 
 
@@ -39,7 +38,7 @@ For questions, please reach out via GitHub or the email below.
 
 ${input.questions-username}
 ${input.questions-email}
-
-
-
 `
+}
+
+module.exports= generateMarkdown();
