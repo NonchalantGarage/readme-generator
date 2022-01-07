@@ -56,7 +56,7 @@ const promptUser = () => {
     {
         type: 'checkbox',
         name: 'license',
-        choices: ['MIT', 'BSD', 'GPL'],
+        choices: ['MIT', 'BSD-3-Clause','MPL-2.0'],
         message: 'Select your licenses',
     },
     // Contributing
@@ -97,6 +97,7 @@ const promptUser = () => {
 // init();
 promptUser()
     .then(readmeData => {
+        console.log(readmeData);
         return generateMarkdown(readmeData);
     })
     .then(reademePage =>{
