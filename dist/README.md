@@ -1,7 +1,11 @@
-# adsa
+
+  ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg) ![License: BSD](https://img.shields.io/badge/License-BSD-yellow.svg) ![License: MPL](https://img.shields.io/badge/License-MPL-yellow.svg)
 
 
-asd
+  # uyt
+
+
+yt
 
 ## Table of Contents
     
@@ -11,32 +15,33 @@ asd
 
 ## Installation
 
-asfg
+ytr
 
 
 ## Usage
 
-bxbx
+ytr
 
 
 ## Licenses
 
-
-![License: MIT](https://img.shields.io/badge/License-MIT,Mozilla-yellow.svg)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![License](https://img.shields.io/badge/License-BSD_3--Clause-blue.svg)](https://opensource.org/licenses/BSD-3-Clause)
+[![License: MPL 2.0](https://img.shields.io/badge/License-MPL_2.0-brightgreen.svg)](https://opensource.org/licenses/MPL-2.0)
 
 
 ## Contributing
 
-sdfsdf
+uyt
 
 ## Tests
 
-xcxxcv
+uyt
 
 ## Questions
 
 For questions, please reach out via GitHub or the email below.
 
-https://github.com/zdh
+https://github.com/uyt
 
-fag
+uyt

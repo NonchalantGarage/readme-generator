@@ -1,29 +1,19 @@
 // TODO: Create a function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
 const renderLicenseBadge = license => {
-  if (!license){
-    return '';
+  const makeBadge= license.map(license =>  
+   `![License: ${license}](https://img.shields.io/badge/License-${license}-yellow.svg)`
+  )
+  return makeBadge.join(' ')
   }
-  else {
-    return ` 
-    ![License: ${license}](https://img.shields.io/badge/License-${license}-yellow.svg)`
-  }
-}
 
 const renderLicenseLink = license => {
-  switch (license) {
-    case "MIT License":
-      return "[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)";
-    case "BSD":
-      return "[![License](https://img.shields.io/badge/License-BSD_3--Clause-blue.svg)](https://opensource.org/licenses/BSD-3-Clause)"
-    case "MPL":
-      return "[![License: MPL 2.0](https://img.shields.io/badge/License-MPL_2.0-brightgreen.svg)](https://opensource.org/licenses/MPL-2.0)"
-    case "PERL":
-      return "[![License: Artistic-2.0](https://img.shields.io/badge/License-Perl-0298c3.svg)](https://opensource.org/licenses/Artistic-2.0)"
-    default:
-      return "";
-
+var licenseOBJ = {
+     "MIT": "[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)",
+     "BSD": "[![License](https://img.shields.io/badge/License-BSD_3--Clause-blue.svg)](https://opensource.org/licenses/BSD-3-Clause)",
+     "MPL": "[![License: MPL 2.0](https://img.shields.io/badge/License-MPL_2.0-brightgreen.svg)](https://opensource.org/licenses/MPL-2.0)",
   }
+  return licenseOBJ[license] || ''
 }
 
 // [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
@@ -53,7 +43,16 @@ const renderLicenseSection = license => {
 
 
 module.exports = input => {
-  return `# ${input.title}
+  var licenseLinks = input.license.map(license => {
+    return renderLicenseLink(license)
+    } 
+  )
+  console.log(typeof input.license);
+  return `
+  ${renderLicenseSection(input.license)}
+
+
+  # ${input.title}
 
 
 ${input.description}
@@ -76,8 +75,7 @@ ${input.usage}
 
 ## Licenses
 
-
-${renderLicenseSection(input.license)}
+${licenseLinks.join('\n')}
 
 
 ## Contributing

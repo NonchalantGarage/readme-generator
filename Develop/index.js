@@ -56,7 +56,7 @@ const promptUser = () => {
     {
         type: 'checkbox',
         name: 'license',
-        choices: ['MIT', 'BSD-3-Clause','MPL-2.0'],
+        choices: ['MIT', 'BSD','MPL'],
         message: 'Select your licenses',
     },
     // Contributing
