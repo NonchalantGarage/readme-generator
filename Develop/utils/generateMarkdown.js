@@ -16,21 +16,6 @@ var licenseOBJ = {
   return licenseOBJ[license] || ''
 }
 
-// [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-
-// `
-
-// `[![License](https://img.shields.io/badge/License-BSD_3--Clause-blue.svg)](https://opensource.org/licenses/BSD-3-Clause)
-// `
-
-// `[![License: MPL 2.0](https://img.shields.io/badge/License-MPL_2.0-brightgreen.svg)](https://opensource.org/licenses/MPL-2.0)
-
-// `
-
-// `[![License: Artistic-2.0](https://img.shields.io/badge/License-Perl-0298c3.svg)](https://opensource.org/licenses/Artistic-2.0)`
-
-
-
 // TODO: Create a function that returns the license section of README
 // If there is no license, return an empty string
 const renderLicenseSection = license => {
@@ -96,17 +81,3 @@ ${input.email}
 `
 }
 ;
-// const mockData = {
-//   title: 'Read Me Automation',
-//   description: 'Project to generate read me',
-//   installation: 'Installation package',
-//   usage: 'Use it as promised',
-//   license: [ 'MIT', 'BSD', 'GPL' ],
-//   contributions: '',
-//   tests: 'Test using TDD',
-//   username: 'NonchalantGarage',
-//   email: 'my Email'
-// }
-
-
-// console.log(generateMarkdown(mockData));

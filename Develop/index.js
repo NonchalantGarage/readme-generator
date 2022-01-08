@@ -3,12 +3,6 @@ const fs = require('fs');
 const inquirer = require('inquirer');
 const generateMarkdown = require('./utils/generateMarkdown');
 const {writeFile} = require('../Develop/writefile')
-// fs.writeFile('README.MD', generateReadMe(), err =>{
-//     if(err) throw err;
-
-//     console.log('README complete! Check out dist directory to see the output!');
-
-// })
 
 const promptUser = () => {
     return inquirer
@@ -87,14 +81,6 @@ const promptUser = () => {
    
 };   
 
-// TODO: Create a function to write README file
-// function writeToFile(fileName, data) {}
-
-// // TODO: Create a function to initialize app
-// function init() {}
-
-// Function call to initialize app
-// init();
 promptUser()
     .then(readmeData => {
         console.log(readmeData);

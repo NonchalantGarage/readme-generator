@@ -2,10 +2,10 @@
   ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg) ![License: BSD](https://img.shields.io/badge/License-BSD-yellow.svg) ![License: MPL](https://img.shields.io/badge/License-MPL-yellow.svg)
 
 
-  # uyt
+  # Rock Paper Scissors
 
 
-yt
+A game to play classic rock paper scissors against the computer. 
 
 ## Table of Contents
     
@@ -15,12 +15,12 @@ yt
 
 ## Installation
 
-ytr
+Play on your web browser
 
 
 ## Usage
 
-ytr
+Have fun challengeing the computer
 
 
 ## Licenses
@@ -32,16 +32,16 @@ ytr
 
 ## Contributing
 
-uyt
+Pull the source code from GitHub. For major changes, please open an issue first to discuss what you would like to change.
 
 ## Tests
 
-uyt
+Test with Jest
 
 ## Questions
 
 For questions, please reach out via GitHub or the email below.
 
-https://github.com/uyt
+https://github.com/nonchalantgarage
 
-uyt
+nonchalantgarage@gmail.com
